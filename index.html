@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <!-- header section start -->
+      <div class="container">
+        <nav>
+          <img src="images/logo2.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!-- header section end -->
+        <!-- home section start -->
+        <div class="header_text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Kunal</span> <br />Kumar From <span class="india_orange">In</span>d<span class="india_green">ia</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- home section end -->
+    <!-- about section start -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub_title">About <span style="color: #ff004f;">Me</span></h1>
+            <p>
+              I have strong design and problem-solving skills, and I am good in C and Java. I am passionate about
+              implementing and launching new projects. I am looking to start my career as an entry-level-software
+              engineer with a reputed technology-driven-firm.
+            </p>
+            <div class="tab_titles">
+              <p class="tab_links active_link" onclick="opentab('education')">Education</p>
+              <p class="tab_links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab_links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab_contents" id="skills">
+              <ul>
+                <li><span>Problem Solving</span><br>Cretification from <strong><span>H</span></strong>acke<strong><span>R</span></strong>ank</li>
+                <li><span>Java programing</span><br>Certificate of peer traning in college.</li>
+                <li><span>C programming</span><br>Certificate of peer traning in college.</li>
+                <li><span>Python programming</span><br>Certificate of completion from Coding Ninjas.</li>
+                <li><span>Team Management</span><br>Lead a 3<sup>rd</sup> year project in my college and completing it successfully.</li>
+                <p></p></li>
+              </ul>
+            </div>
+            <div class="tab_contents" id="experience">
+              <ul>
+                <li><span>Web Developer intern</span><br />AWS ACADEMY
+                  05/2023 - 07/2023, <br>It was an enlightening and rewarding experience. It provided me with insights into the industry
+                  and the skills required by a full stack devloper working on real it. My role is to analyze, design
+                  and develop project</li>
+                <li><span>Web Development Intern</span><br />OASIS INFOBYTE 01/08/2023 - 31/08/2023, <br>In this internship I got a hand's on experience on HTML, CSS and JavaScript through various projects.</li>
+              </ul>
+            </div>
+            <div class="tab_contents active_tab" id="education">
+              <ul>
+                <li><span>Bachelor in Technology</span><br />Greater Noida Institute of Technology, 08/2020 - present <br> <strong>Computer Science and Engineering </strong><br>8.5 CGPA</li>
+                <li><span>Intermediate / (12th)</span><br />Gurukul Vidya peeth <br>88%</li>
+                <li><span>Marticulation / (10th)</span><br />Surajdeo Memorial School <br>79.3%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about section end -->
+    <!-- services section start  -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub_title"><span style="color: green;">My</span> Services</h1>
+        <div class="services_list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software;
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>UI/UX Designer</h2>
+            <p>
+              User experience design (UX design, UXD, UED, or XD) is the process of defining the experience a user would go through when interacting with a company, its services, and its products.[1] Design decisions in UX design are often driven by research, data analysis, and test results rather than aesthetic preferences and opinions...
+            </p>
+            <a href="https://en.wikipedia.org/wiki/User_experience_design" target="_blank">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>WEB DEV Design</h2>
+            <p>
+              Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services section end  -->
+
+    <!-- Portfolio section starts -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub_title">My <span style="color: #ff004f;">Work</span></h1>
+        <div class="work_list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Online library Management</h3>
+              <p>
+                The main objective of this project is to provide the hand free access to the library portal through web
+interface.
+              </p>
+              <a href="#"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Resume Builder</h3>
+              <p>
+                The main objective of the Online Resume Builder is to manage the details of Resume, Job, Individual, Skills,
+Qualification. It manages all the information about Resume, Job-seeker, Qualification, Resume.
+              </p>
+              <a href="#"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Food Munching Website</h3>
+              <p>
+                The two main objective of this website is (1) the website must show off the attractive array of food and (2)
+the website must make it easy to see necessary information regarding food , costing and other facilities.
+              </p>
+              <a href="#"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work" id="dis1" >
+            <img src="images/work-4.png" alt="" />
+            <div class="layer">
+              <h3>Temprature Convertor</h3>
+              <p>
+                The main objective of this project is to create an interface which can convert any valid temprature value from one unit to another(Cel,Kel,Fah).
+              </p>
+              <a href="https://github.com/kunal9430/OasisInfobyte-Task-3-"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work" id="dis2" >
+            <img src="images/work-5.png" alt="" />
+            <div class="layer">
+              <h3>Landing Page</h3>
+              <p>
+                The main objective of this project is to create a landing page of the flower shop. This landing page include header, body, and footer section. It is fully responsive and easy to use.
+              </p>
+              <a href="https://github.com/kunal9430/OasisInfobyte-Task-1-"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work" id="dis3" >
+            <img src="images/work-6.png" alt="" />
+            <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>
+                In a personal portfolio, you get to show a wide range of samples and skills and add your resume. You can add an image at the top where you can introduce yourself; below that, you can add contact information.
+              </p>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#dis1" class="btn" id="primary" onclick="changeDisplay()">See More</a>
+      </div>
+    </div>
+    <!-- Portfolio section ends -->
+    <!-- contact section starts -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact_left">
+            <h1 class="sub_title"><span style="color: green;">Contact</span> Me</h1>
+            <p><i class="fa-regular fa-envelope"></i> <span>kunalkumarh2003@gmail.com</span></p>
+            <p><i class="fas fa-phone-square-alt"></i> <span>+91-8797327756</span></p>
+            <div class="social_icons">
+              <a href="https://www.facebook.com/profile.php?id=100076066683623&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/KunalKu31966917?t=LR2iT9DFC8ZbFkJUut_D5Q&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="https://instagram.com/kunalkumarh2003?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/kunal-singh-9a59b81b7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="./images/my-cv.pdf" class="btn btn2 download" download="Kunal Resume"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact_right">
+            <form action="" name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                id=""
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <span>&copy;</span> created by Kunal Kumar || All right
+          reserved
+        </p>
+      </div>
+    </div>
+    <!-- contact section ends -->
+    <script src="./script.js"></script>
+  </body>
+</html>
